@@ -81,4 +81,5 @@ $(document).ready(function(){
         addition + yellow;
         winsLosses();
     })     
+
 });
