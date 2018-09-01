@@ -15,41 +15,42 @@
     <link href="assets/css/style.css" rel="stylesheet">
   </head>
 
-  <body class="text-center brownBrick">
-    <div class="torch margin-75px-left"></div>
-    
+  <body class="text-center ">
         <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
         <div class="inner">
-          <h3 class="masthead-brand"></h3>
+            <div>
+                <img class="centered padding-20px-top " src="assets/images/title.png"/>
+                <h3 class="masthead-brand"></h3>
+            </div>
         </div>
       </header>
 
       <main role="main" class="inner cover">
-        <h1 class="cover-heading title-exagerated-large padding-100px-bottom">36</h1>
-        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-        <p class="lead">
-          <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-        </p>
+        <div class="container">
+            <div class="col-md-10 offset-md-1 text-beige">
+              <p class="lead">You will be given a random number at the start of the game.
+              There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+              You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.
+              Each time the game starts, the game will change the values of each crystal.</p>
+            </div>
+        </div>
+        <div id="bgRepeat" class="col-md-auto">
+            <img src="assets/images/bg-left.png" class="floatleft"/>
+            <img src="assets/images/bg-right.png" class="floatRight"/>
+            <h1 class="title-exagerated-large padding-20px-top text-hot-pink">36</h1>
+        </div>
       </main>
-      <div class="container margin-75px-top">
+      <div class="container margin-20px-top margin-50px-bottom">
           <div class="row justify-content-md-center">
-            <div class="col-md-auto">
-              1 of 3
-            </div>
-            <div class="col-md-auto">
-              Variable width content
-            </div>
-            <div class="col-md-auto">
-              3 of 3
-            </div>
-            <div class="col-md-auto">
-                3 of 3
-              </div>
+            <div id="blueTriangle" class="col-md-auto"></div>
+            <div id="greenJewel" class="col-md-auto"></div>
+            <div id="pinkJewel" class="col-md-auto"></div>
+            <div id="redJewel" class="col-md-auto"></div>
           </div>
         </div>
     
-      <footer class="mastfoot mt-auto light-brownBrck">
+      <footer class="mastfoot mt-auto spikedChest ">
         <div class="inner">
         </div>
       </footer>
