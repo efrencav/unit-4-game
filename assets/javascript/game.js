@@ -1,5 +1,4 @@
 //Global variables that are accesible for all
-crystals = ["../images/red.png", "../images/blue.png", "../images/green.png", "../images/yellow.png"];
 var counter = 0;
 var wins = 0;
 var losses = 0;
@@ -19,6 +18,11 @@ var red = Math.floor(Math.random() * 100 + 1);
 var blue = Math.floor(Math.random() * 100 + 1);
 var green = Math.floor(Math.random() * 100 + 1);
 var yellow = Math.floor(Math.random() * 100 + 1);
+
+//Random image
+var myPix = new Array("../images/red.png", "../images/blue.png", "../images/green.png", "../images/yellow.png");
+var randomNum = Math.floor(Math.random() * myPix.length);
+
 
 //Appending the addition in the HTML
 var updateAddition = function(){
