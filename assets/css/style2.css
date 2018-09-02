@@ -2,6 +2,11 @@
  * Globals
  */
 
+ footer {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  width:100%; }
 /* Links */
 
 
@@ -9,10 +14,10 @@
 /* Headings */
 h1 {font-size:40px; line-height:45px; }
 h2 {font-size:35px; line-height:40px;}
-h3 {font-size:28px; line-height:24px;}
-h4 {font-size:40px; line-height:46px;}
-h5 {font-size:32px; line-height:40px;}
-h6 {font-size:25px; line-height:30px;}
+h3 {font-size:32px; line-height:40px;}
+h4 {font-size:28px; line-height:36px;}
+h5 {font-size:24px; line-height:30px;}
+h6 {font-size:20px; line-height:26px;}
 
 /* background colors */
 .bg-transparent {background-color: transparent;}
@@ -30,6 +35,11 @@ h6 {font-size:25px; line-height:30px;}
 .bg-dark-brown {background-color:#140c09;}
 
 /* Backgrounds with images */
+.headerBg {background-image: url("../images/header-bg.jpg");
+  background-repeat: repeat-x;
+  z-index: -99;
+}
+
 .brownBrick {background-image: url("../images/64_tomb_16.png");
              background-repeat: repeat;
              z-index: -99;
@@ -177,9 +187,9 @@ margin-top: 70px;
            margin-right: auto;}
 
 /* text size */
-.text-small {font-size:16px; line-height:23px;}
+.text-small {font-size:14px; line-height:18px;}
 .text-medium {font-size:18px; line-height:26px;}
-.text-large {font-size:20px; line-height:30px;}
+.text-large {font-size:30px; line-height:30px;}
 .title-large {font-size:100px; line-height:95px;}
 .title-exagerated-large {font-size:160px; line-height:155px;}
 
@@ -327,4 +337,14 @@ margin-top: 70px;
   border-radius: 25px;
   border: 1px solid #b79a58;
   padding: 20px;   
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: inherit;
+  white-space: nowrap;
 }
