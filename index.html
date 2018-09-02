@@ -1,61 +1,101 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-
-    <title>The Jewel Game</title>
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <!-- Custom styles for this template -->
-    <link href="assets/css/style.css" rel="stylesheet">
-  </head>
-
-  <body class="text-center ">
-        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
-        <div class="inner">
-            <div>
-                <img class="centered padding-20px-top " src="assets/images/title.png"/>
-                <h3 class="masthead-brand"></h3>
-            </div>
-        </div>
-      </header>
-
-      <main role="main" class="inner cover">
-        <div class="container">
-            <div class="col-md-10 offset-md-1 text-beige">
-              <p class="lead">You will be given a random number at the start of the game.
-              There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
-              You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.
-              Each time the game starts, the game will change the values of each crystal.</p>
-            </div>
-        </div>
-        <div id="bgRepeat" class="col-md-auto">
-            <img src="assets/images/bg-left.png" class="floatleft"/>
-            <img src="assets/images/bg-right.png" class="floatRight"/>
-            <h1 class="title-exagerated-large padding-20px-top text-hot-pink">36</h1>
-        </div>
-      </main>
-      <div class="container margin-20px-top margin-50px-bottom">
-          <div class="row justify-content-md-center">
-            <div id="blueTriangle" class="col-md-auto"></div>
-            <div id="greenJewel" class="col-md-auto"></div>
-            <div id="pinkJewel" class="col-md-auto"></div>
-            <div id="redJewel" class="col-md-auto"></div>
-          </div>
-        </div>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
     
-      <footer class="mastfoot mt-auto">
-        <div class="inner">
-        </div>
-      </footer>
-    </div>
+    
+        <title>The Jewel Game</title>
+    
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+        <!-- Custom styles for this template -->
+        <link href="assets/css/style.css" rel="stylesheet">
+      </head>
 
+  <body class="bg-charcoal-gray">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top padding-20px-top padding-20px-bottom headerBg">
+      <div class="container">
+        <a class="navbar-brand text-large" href="#">The Jewel Game</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container padding-50px-top text-white">
+
+      <!-- Portfolio Item Heading -->
+      <!-- <h1 class="my-4">Page Heading
+        <small>Secondary Text</small>
+      </h1> -->
+
+      <!-- Portfolio Item Row -->
+      <div class="row padding-100px-top">
+        <div class="col-md-4 text-small opacity5">
+            <h5 class="my-3">Project Description</h5>
+            <p>You will be given a random number at the start of the game.
+                There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+                You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.
+                Each time the game starts, the game will change the values of each crystal.</p>
+        </div>  
+        <div class="col-md-3 col-sm-6 mb-4">
+            <h1 class="title-exagerated-large align-center padding-20px-top text-hot-pink">36</h1>
+          </div>  
+
+        <div class="col-md-4 col-sm-6 mb-4">
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+      <!-- Related Projects Row -->
+      <div class="row padding-50px-top">
+
+        <div id="blueTriangle" class="col-md-2 col-sm-6 mb-4">
+          <a href="#">
+          </a>
+        </div>
+
+        <div id="greenJewel" class="col-md-2 col-sm-6 mb-4">
+          <a href="#">
+          </a>
+        </div>
+
+        <div id="pinkJewel" class="col-md-2 col-sm-6 mb-4">
+          <a href="#">
+          </a>
+        </div>
+
+        <div id="redJewel" class="col-md-2 col-sm-6 mb-4">
+          <a href="#">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4 ">
+            <img class="img-fluid" src="assets/images/spiked_chest_small.png" alt="Treasure chest">
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-3 bg-black">
+      <div class="container">
+        <p class="m-0 text-center text-dark-gray">Copyright &copy; The Jewel Game 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -64,4 +104,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
+
 </html>

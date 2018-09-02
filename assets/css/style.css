@@ -2,51 +2,22 @@
  * Globals
  */
 
+ footer {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  width:100%; }
 /* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
-
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
-}
-
-
-/*
- * Base structure
- */
-
-html,
-body {
-  height: 100%;
-  background-color: #140c09;
-}
-
-body {
-  display: -ms-flexbox;
-  display: flex;
-  color: #fff;
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-}
 
 
 /* My Styles */
 /* Headings */
 h1 {font-size:40px; line-height:45px; }
 h2 {font-size:35px; line-height:40px;}
-h3 {font-size:28px; line-height:24px;}
-h4 {font-size:40px; line-height:46px;}
-h5 {font-size:32px; line-height:40px;}
-h6 {font-size:25px; line-height:30px;}
+h3 {font-size:32px; line-height:40px;}
+h4 {font-size:28px; line-height:36px;}
+h5 {font-size:24px; line-height:30px;}
+h6 {font-size:20px; line-height:26px;}
 
 /* background colors */
 .bg-transparent {background-color: transparent;}
@@ -61,8 +32,14 @@ h6 {font-size:25px; line-height:30px;}
 .bg-orange {background-color: #f05444;}
 .bg-teal {background-color:#4aaaa5;}
 .bg-beige {background-color:#c59f00;}
+.bg-dark-brown {background-color:#140c09;}
 
 /* Backgrounds with images */
+.headerBg {background-image: url("../images/header-bg.jpg");
+  background-repeat: repeat-x;
+  z-index: -99;
+}
+
 .brownBrick {background-image: url("../images/64_tomb_16.png");
              background-repeat: repeat;
              z-index: -99;
@@ -102,66 +79,86 @@ h6 {font-size:25px; line-height:30px;}
 }
 
 /* Jewel Hover */
-#redRuby {background-image: url("../images/redRuby.png");
+#redRuby {background-image: url("../images/rubin.png");
 background-repeat: no-repeat;
-height: 240px;
-width: 240px;
+height: 170px;
+width: 170px;
+margin-left: auto;
+margin-right: auto;
 
 }
 
-#redRuby:hover {background-image: url("../images/redRubyhover.png");
+#redRuby:hover {background-image: url("../images/rubin_hover.png");
   background-repeat: no-repeat;
-  height: 240px;
-  width: 240px;
+  height: 170px;
+  width: 170px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#greenJewel {background-image: url("../images/greenJewel.png");
+#greenJewel {background-image: url("../images/emerald.png");
   background-repeat: no-repeat;
-  height: 260px;
-  width: 252px;
+  height: 170px;
+  width: 170px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#greenJewel:hover {background-image: url("../images/greenJewelhover.png");
+#greenJewel:hover {background-image: url("../images/emerald_hover.png");
 background-repeat: no-repeat;
-height: 260px;
-width: 252px;
+height: 170px;
+width: 170px;
+margin-left: auto;
+margin-right: auto;
 }
 
-#pinkJewel {background-image: url("../images/pinkJewel.png");
+#pinkJewel {background-image: url("../images/ametist.png");
 background-repeat: no-repeat;
-height: 260px;
-width: 252px;
+height: 170px;
+width: 170px;
+margin-left: auto;
+margin-right: auto;
 }
 
-#pinkJewel:hover {background-image: url("../images/pinkJewelhover.png");
+#pinkJewel:hover {background-image: url("../images/ametist_hover.png");
 background-repeat: no-repeat;
-height: 260px;
-width: 252px;
+height: 170px;
+width: 170px;
+margin-left: auto;
+margin-right: auto;
 }
 
-#redJewel {background-image: url("../images/redJewel.png");
+#redJewel {background-image: url("../images/rubin.png");
 background-repeat: no-repeat;
-height: 260px;
-width: 252px;
+height: 170px;
+width: 170px;
+margin-left: auto;
+margin-right: auto;
 }
 
-#redJewel:hover {background-image: url("../images/redJewelhover.png");
+#redJewel:hover {background-image: url("../images/rubin_hover.png");
 background-repeat: no-repeat;
-height: 260px;
-width: 252px;
+height: 170px;
+width: 170px;
+margin-left: auto;
+margin-right: auto;
 }
 
 
-#blueTriangle {background-image: url("../images/blueTriangle.png");
+#blueTriangle {background-image: url("../images/safir.PNG");
   background-repeat: no-repeat;
-  height: 260px;
-  width: 252px;
+  height: 170px;
+  width: 170px;
+  margin-left: auto;
+  margin-right: auto;
   }
   
-#blueTriangle:hover {background-image: url("../images/blueTrianglehover.png");
+#blueTriangle:hover {background-image: url("../images/safir_hover.png");
   background-repeat: no-repeat;
-  height: 260px;
-  width: 252px;
+  height: 170px;
+  width: 170px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #bgRepeat {background-image: url("../images/bg-repeat.png");
@@ -184,28 +181,15 @@ margin-top: 70px;
   margin-top: 70px;
 }  
 
-p {
-  margin-top: 0;
-  margin-bottom: 0 !important;
-}
-
-p {
-  display: block;
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-}
-
 .floatLeft {float: left;}
 .floatRight {float: right;}
 .centered {margin-left: auto;
            margin-right: auto;}
 
 /* text size */
-.text-small {font-size:16px; line-height:23px;}
+.text-small {font-size:14px; line-height:18px;}
 .text-medium {font-size:18px; line-height:26px;}
-.text-large {font-size:20px; line-height:30px;}
+.text-large {font-size:30px; line-height:30px;}
 .title-large {font-size:100px; line-height:95px;}
 .title-exagerated-large {font-size:160px; line-height:155px;}
 
@@ -347,4 +331,20 @@ p {
 
 .topLayer {
   z-index: 5;
+}
+
+.rcorners {
+  border-radius: 25px;
+  border: 1px solid #b79a58;
+  padding: 20px;   
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: inherit;
+  white-space: nowrap;
 }
