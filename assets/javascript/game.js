@@ -22,7 +22,11 @@ var yellow = Math.floor(Math.random() * 100 + 1);
 //Random image
 var myPix = new Array("../images/red.png", "../images/blue.png", "../images/green.png", "../images/yellow.png");
 var randomNum = Math.floor(Math.random() * myPix.length);
+for(var i = 0; i < myPix.length; i++) {
+    document.slide.src = myPix[i];
+}
 
+document.getElementById("myPicture").src = myPix[randomNum];
 
 //Appending the addition in the HTML
 var updateAddition = function(){
