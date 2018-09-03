@@ -6,14 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-    
-    
         <title>The Jewel Game</title>
-    
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
-        <!-- Custom styles for this template -->
+        <!-- Styles -->
         <link href="assets/css/style.css" rel="stylesheet">
       </head>
 
@@ -23,9 +20,6 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top padding-20px-top padding-20px-bottom headerBg">
       <div class="container">
         <a class="navbar-brand text-large" href="#">The Jewel Game</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
         
       </div>
     </nav>
@@ -48,34 +42,37 @@
                 Each time the game starts, the game will change the values of each crystal.</p>
         </div>  
         <div class="col-md-3 col-sm-6 mb-4">
-            <h1 class="title-exagerated-large align-center padding-20px-top text-hot-pink">36</h1>
+          <h2 class="align-center">Number to Guess:</h2>
+            <h1 class="title-exagerated-large align-center padding-20px-top text-hot-pink"><span id="randomNumber"></span></h1>
           </div>  
 
-        <div class="col-md-4 col-sm-6 mb-4">
+        <div class="col-md-4 col-sm-6 mb-4 winsAndLosses">
+          <h2>Wins: <span class="text-hot-pink" id="numberWins"></span></h2>
+          <h2>Losses: <span class="text-hot-pink" id="numberLosses"></span></h2>
+          <h2>Total Score: <span class="text-hot-pink" id="finalTotal"></span></h2>
         </div>
-
       </div>
       <!-- /.row -->
 
       <!-- Related Projects Row -->
       <div class="row padding-50px-top">
 
-        <div id="blueTriangle" class="col-md-2 col-sm-6 mb-4">
+        <div id="blueTriangle" class="col-md-2 col-sm-6 mb-4" id="safir">
           <a href="#">
           </a>
         </div>
 
-        <div id="greenJewel" class="col-md-2 col-sm-6 mb-4">
+        <div id="greenJewel" class="col-md-2 col-sm-6 mb-4" id="emerald">
           <a href="#">
           </a>
         </div>
 
-        <div id="pinkJewel" class="col-md-2 col-sm-6 mb-4">
+        <div id="pinkJewel" class="col-md-2 col-sm-6 mb-4" id="ametist">
           <a href="#">
           </a>
         </div>
 
-        <div id="redJewel" class="col-md-2 col-sm-6 mb-4">
+        <div id="redJewel" class="col-md-2 col-sm-6 mb-4" id="rubin">
           <a href="#">
           </a>
         </div>
@@ -103,6 +100,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
   </body>
 
 </html>
