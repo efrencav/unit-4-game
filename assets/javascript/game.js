@@ -26,7 +26,7 @@ $(document).ready(function(){
         preBuffer[i].src = newChest[i];
     }
     var whatImage = Math.floor(Math.random() * (p-1));
-});
+
     function showImage() {
         if(whatImage === 0) {
             document.write('<img src="'+newChest[whatImage]+'" border=0 width=283 </a>');
@@ -63,21 +63,21 @@ $(document).ready(function(){
         var safir = Math.floor(Math.random() * 11 + 1);
         userTotal = 0;
         $("#finalTotal").text(userTotal);
-    };
+    }
 // Win Function
     function youWin() {
         alert("You Won!");
         wins++;
         $("#numberWins").text(wins);
         reset();
-    };
+    }
 // Lose Function
     function youLose() {
         alert ("You Lose!");
         losses++;
         $("#numberLosses").text(losses);
         reset();
-    };
+    }
 
 // On Click Options
 // Ametist
@@ -104,7 +104,7 @@ $(document).ready(function(){
         else if(userTotal > random) {
             youLose();
         }
-    })
+    });
 
 // Safir
     $("#safir").on("click", function(){
@@ -117,7 +117,7 @@ $(document).ready(function(){
         else if(userTotal > random) {
             youLose();
         }
-    })
+    });
 
 // Rubin
     $("#rubin").on("click", function(){
@@ -131,3 +131,4 @@ $(document).ready(function(){
             youLose();
         }
     });
+})
