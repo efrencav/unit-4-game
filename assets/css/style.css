@@ -40,22 +40,7 @@ h6 {font-size:20px; line-height:26px;}
   z-index: -99;
 }
 
-.brownBrick {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/64_tomb_16.png");
-             background-repeat: repeat;
-             z-index: -99;
-}
-
-.light-brownBrck {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/images/64_tomb_00.png");
-                  background-repeat: repeat;
-                  height: 300px;
-                  bottom: 0px;
-}
-
-.bigBrick {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/bigBrick.png");
-  background-repeat: repeat-x;
-  height: 384px;
-}
-
+/* Chests */
 .spikedChest {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/spiked_chest_small.png");
   background-repeat: no-repeat;
   height: 400px;
@@ -65,18 +50,43 @@ h6 {font-size:20px; line-height:26px;}
   margin-right: auto;
 }
 
-.light-brickToprow {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/48_tomb_15.jpg");
-                    background-repeat: repeat-x;
-                    height: 48px;
-                    top: 2px;
-                    width: auto 0;
+.commonChest {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/common_chest.png");
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.crystalChest {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/crystal_chest.png");
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nefritChest {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/nefrit_chest.png");
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.redChest {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/red_chest.png");
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* images */
-.tjgLogo {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/tjg-logo.png");
-          background-repeat: no-repeat;
-          position: absolute;
-          z-index: 99;
-}
 
 /* Jewel Hover */
 #redRuby {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/rubin.png");

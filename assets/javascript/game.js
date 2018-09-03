@@ -46,7 +46,7 @@ $(document).ready(function(){
         if(userTotal === random) {
             youWin();
         }
-        else if(usertTotal > random) {
+        else if(userTotal > random) {
             youLose();
         }
     })
@@ -57,7 +57,7 @@ $(document).ready(function(){
         if(userTotal === random) {
             youWin();
         }
-        else if(usertTotal > random) {
+        else if(userTotal > random) {
             youLose();
         }
     })
@@ -68,7 +68,7 @@ $(document).ready(function(){
         if(userTotal === random) {
             youWin();
         }
-        else if(usertTotal > random) {
+        else if(userTotal > random) {
             youLose();
         }
     })
@@ -79,7 +79,7 @@ $(document).ready(function(){
         if(userTotal === random) {
             youWin();
         }
-        else if(usertTotal > random) {
+        else if(userTotal > random) {
             youLose();
         }
     });
