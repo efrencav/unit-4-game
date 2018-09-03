@@ -1,44 +1,86 @@
 $(document).ready(function(){
-    var random = Math.floor(Math.random() * 50) 
-    $("#randomNumber").text(random);
-
-    var ametist = Math.floor(Math.random() * 11)
-    var emerald = Math.floor(Math.random() * 11)
-    var rubin = Math.floor(Math.random() * 11)
-    var safir = Math.floor(Math.random() * 11)
-
+// Variables
+    var random = Math.floor(Math.random() * 101 + 19) 
+    var ametist = Math.floor(Math.random() * 11 + 1)
+    var emerald = Math.floor(Math.random() * 11 + 1)
+    var rubin = Math.floor(Math.random() * 11 + 1)
+    var safir = Math.floor(Math.random() * 11 + 1)
     var userTotal = 0;
     var wins = 0;
     var losses = 0;
 
+    var newChest = new Array() 
+    // Random images
+    newChest[0] = "../images/spiked_chest_small.png"
+    newChest[1] = "../images/common_chest.png"
+    newChest[2] = "../images/crystal_chest.png"
+    newChest[3] = "../images/nefrit_chest.png"
+    newChest[4] = "../images/red_chest.png"
+
+    var j = 0;
+    var p = newChest.length;
+    var preBuffer = new Array()
+
+    for (i = 0; i < p; i++) {
+        preBuffer[i] = new Image()
+        preBuffer[i].src = newChest[i]
+    }
+    var whatImage = Math.floor(Math.random() * (p-1));
+
+    function showImage() {
+        if(whatImage === 0) {
+            document.write('<img src="'newChest[whatImage]'"></a>');
+        }
+        else if(whatImage === 1) {
+            document.write('<img src="'newChest[whatImage]'"></a>');
+        }
+        else if(whatImage === 2) {
+            document.write('<img src="'newChest[whatImage]'"></a>');
+        }
+        else if(whatImage === 3) {
+            document.write('<img src="'newChest[whatImage]'"></a>');
+        }
+        else if(whatImage === 4) {
+            document.write('<img src="'newChest[whatImage]'"></a>');
+        }
+    }
+    
+// Declaring valuables
     $("#numberWins").text(wins);
     $("#numberLosses").text(losses);
     $("#finalTotal").text(userTotal);
+    $("#randomNumber").text(random);
 
+
+// Resets the game
     function reset() {
-        random = Math.floor(Math.random() * 11);
+        random = Math.floor(Math.random() * 101 + 19);
         console.log(random)
         $("#randomNumber").text(random);
-        var ametist = Math.floor(Math.random() * 11);
-        var emerald = Math.floor(Math.random() * 11);
-        var rubin = Math.floor(Math.random() * 11);
-        var safir = Math.floor(Math.random() * 11);
+        var ametist = Math.floor(Math.random() * 11 + 1);
+        var emerald = Math.floor(Math.random() * 11 + 1);
+        var rubin = Math.floor(Math.random() * 11 + 1);
+        var safir = Math.floor(Math.random() * 11 + 1);
         userTotal = 0;
         $("#finalTotal").text(userTotal);
     }
-
+// Win Function
     function youWin() {
         alert("You Won!");
         wins++;
         $("#numberWins").text(wins);
         reset();
     }
+// Lose Function
     function youLose() {
         alert ("You Lose!");
         losses++;
         $("#numberLosses").text(losses);
         reset();
     }
+
+// On Click Options
+// Ametist
     $("#ametist").on("click", function(){
         userTotal = userTotal + ametist;
         console.log("New userTotal = " + userTotal);
@@ -50,6 +92,8 @@ $(document).ready(function(){
             youLose();
         }
     })
+
+// Emerald
     $("#emerald").on("click", function(){
         userTotal = userTotal + emerald;
         console.log("New userTotal = " + userTotal);
@@ -61,6 +105,8 @@ $(document).ready(function(){
             youLose();
         }
     })
+
+// Safir
     $("#safir").on("click", function(){
         userTotal = userTotal + safir;
         console.log("New userTotal = " + userTotal);
@@ -72,6 +118,8 @@ $(document).ready(function(){
             youLose();
         }
     })
+
+// Rubin
     $("#rubin").on("click", function(){
         userTotal = userTotal + rubin;
         console.log("New userTotal = " + userTotal);
@@ -83,5 +131,4 @@ $(document).ready(function(){
             youLose();
         }
     });
-
 });
