@@ -60,10 +60,10 @@ $(document).ready(function(){
         random = Math.floor(Math.random() * 101 + 19);
         console.log(random);
         $("#randomNumber").text(random);
-        var ametist = Math.floor(Math.random() * 11 + 1);
-        var emerald = Math.floor(Math.random() * 11 + 1);
-        var rubin = Math.floor(Math.random() * 11 + 1);
-        var safir = Math.floor(Math.random() * 11 + 1);
+        ametist = Math.floor(Math.random() * 11 + 1);
+        emerald = Math.floor(Math.random() * 11 + 1);
+        rubin = Math.floor(Math.random() * 11 + 1);
+        safir = Math.floor(Math.random() * 11 + 1);
         userTotal = 0;
         $("#finalTotal").text(userTotal);
     }
@@ -81,13 +81,15 @@ $(document).ready(function(){
         $("#numberLosses").text(losses);
         reset();
     }
+  
 
 // On Click Options
 // Ametist
     $("#ametist").on("click", function(){
         userTotal = userTotal + ametist;
-        console.log("New userTotal = " + userTotal);
+        console.log("Ametist value = " + ametist + "   New userTotal = " + userTotal);
         $("finalTotal").text(userTotal);
+        
         if(userTotal === random) {
             youWin();
         }
@@ -99,7 +101,7 @@ $(document).ready(function(){
 // Emerald
     $("#emerald").on("click", function(){
         userTotal = userTotal + emerald;
-        console.log("New userTotal = " + userTotal);
+        console.log("Emerald value = " + emerald + "   New userTotal = " + userTotal);
         $("finalTotal").text(userTotal);
         if(userTotal === random) {
             youWin();
@@ -112,7 +114,7 @@ $(document).ready(function(){
 // Safir
     $("#safir").on("click", function(){
         userTotal = userTotal + safir;
-        console.log("New userTotal = " + userTotal);
+        console.log("Safir value = " + safir + "   New userTotal = " + userTotal);
         $("finalTotal").text(userTotal);
         if(userTotal === random) {
             youWin();
@@ -125,7 +127,7 @@ $(document).ready(function(){
 // Rubin
     $("#rubin").on("click", function(){
         userTotal = userTotal + rubin;
-        console.log("New userTotal = " + userTotal);
+        console.log("Rubin value = " + rubin + "   New userTotal = " + userTotal);
         $("finalTotal").text(userTotal);
         if(userTotal === random) {
             youWin();
