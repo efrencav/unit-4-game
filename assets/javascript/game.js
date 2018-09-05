@@ -19,12 +19,11 @@ $(document).ready(function(){
     $("#numberLosses").text(losses);
 
 // Random Chest images as an accessory
-    var newChest = new Array(); 
-    newChest[0] = "http://www.efren-cavazos.com/unit-4-game/assets/images/spiked_chest_small.png";
-    newChest[1] = "http://www.efren-cavazos.com/unit-4-game/assets/images/common_chest.png";
-    newChest[2] = "http://www.efren-cavazos.com/unit-4-game/assets/images/crystal_chest.png";
-    newChest[3] = "http://www.efren-cavazos.com/unit-4-game/assets/images/nefrit_chest.png";
-    newChest[4] = "http://www.efren-cavazos.com/unit-4-game/assets/images/red_chest.png";
+    var newChest = ["http://www.efren-cavazos.com/unit-4-game/assets/images/spiked_chest_small.png",
+                    "http://www.efren-cavazos.com/unit-4-game/assets/images/common_chest.png",
+                    "http://www.efren-cavazos.com/unit-4-game/assets/images/crystal_chest.png", 
+                    "http://www.efren-cavazos.com/unit-4-game/assets/images/nefrit_chest.png",
+                    "http://www.efren-cavazos.com/unit-4-game/assets/images/red_chest.png"];
 
     var chest = newChest.length;
     var x = Math.floor(chest * Math.random());
@@ -41,6 +40,7 @@ $(document).ready(function(){
         safir = Math.floor(Math.random() * 11 + 1);
         userTotal = 0;
         $("#finalTotal").text(userTotal);
+        $("#randomChest").attr("src", newChest[x]);
     }
 // Win Function
     function youWin() {
