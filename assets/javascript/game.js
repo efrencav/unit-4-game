@@ -1,15 +1,24 @@
 $(document).ready(function(){
 // Variables
+// Generates Random Number
     var random = Math.floor(Math.random() * 101 + 19); 
-    var ametist = Math.floor(Math.random() * 11 + 1);
-    var emerald = Math.floor(Math.random() * 11 + 1);
-    var rubin = Math.floor(Math.random() * 11 + 1);
+    $("#randomNumber").text(random);
+// Jewel values with random number generator
     var safir = Math.floor(Math.random() * 11 + 1);
+    var emerald = Math.floor(Math.random() * 11 + 1);
+    var ametist = Math.floor(Math.random() * 11 + 1);
+    var rubin = Math.floor(Math.random() * 11 + 1);
+// Game and Player Values
     var userTotal = 0;
-    var wins = 0;
-    var losses = 0;
+    $("#finalTotal").text(userTotal);
 
-    // Random images
+    var wins = 0;
+    $("#numberWins").text(wins);
+
+    var losses = 0;
+    $("#numberLosses").text(losses);
+
+// Random Chest images as an accessory
     var newChest = new Array(); 
     newChest[0] = "http://www.efren-cavazos.com/unit-4-game/assets/images/spiked_chest_small.png";
     newChest[1] = "http://www.efren-cavazos.com/unit-4-game/assets/images/common_chest.png";
@@ -18,42 +27,8 @@ $(document).ready(function(){
     newChest[4] = "http://www.efren-cavazos.com/unit-4-game/assets/images/red_chest.png";
 
     var chest = newChest.length;
-    var x = Math.floor(chest * Math.random())
-    $("#newChest").attr("src", newChest[x]);
-    // var j = 0;
-    // var p = newChest.length;
-    // var preBuffer = new Array();
-
-    // for (i = 0; i < p; i++) {
-    //     preBuffer[i] = new Image();
-    //     preBuffer[i].src = newChest[i];
-    // }
-    // var whatImage = Math.floor(Math.random() * (p-1));
-
-    // function showImage() {
-    //     if(whatImage === 0) {
-    //         document.write('<img src="'+newChest[whatImage]+'">');
-        // }
-        // else if(whatImage === 1) {
-        //     document.write('<img src="'+newChest[whatImage]+'" border=0 width=283 </a>');
-        // }
-        // else if(whatImage === 2) {
-        //     document.write('<img src="'+newChest[whatImage]+'" border=0 width=283 </a>');
-        // }
-        // else if(whatImage === 3) {
-        //     document.write('<img src="'+newChest[whatImage]+'" border=0 width=283 </a>');
-        // }
-        // else if(whatImage === 4) {
-        //     document.write('<img src="'+newChest[whatImage]+'" border=0 width=283 </a>');
-        // }
-    // }
-    
-// Declaring valuables
-    $("#numberWins").text(wins);
-    $("#numberLosses").text(losses);
-    $("#finalTotal").text(userTotal);
-    $("#randomNumber").text(random);
-
+    var x = Math.floor(chest * Math.random());
+    $("#randomChest").attr("src", newChest[x]);
 
 // Resets the game
     function reset() {
@@ -84,12 +59,11 @@ $(document).ready(function(){
   
 
 // On Click Options
-// Ametist
-    $("#ametist").on("click", function(){
-        userTotal = userTotal + ametist;
-        console.log("Ametist value = " + ametist + "   New userTotal = " + userTotal);
+// Safir
+    $("#safir").on("click", function(){
+        userTotal = userTotal + safir;
+        console.log("Safir value = " + safir + "   New userTotal = " + userTotal);
         $("finalTotal").text(userTotal);
-        
         if(userTotal === random) {
             youWin();
         }
@@ -111,11 +85,12 @@ $(document).ready(function(){
         }
     });
 
-// Safir
-    $("#safir").on("click", function(){
-        userTotal = userTotal + safir;
-        console.log("Safir value = " + safir + "   New userTotal = " + userTotal);
+// Ametist
+    $("#ametist").on("click", function(){
+        userTotal = userTotal + ametist;
+        console.log("Ametist value = " + ametist + "   New userTotal = " + userTotal);
         $("finalTotal").text(userTotal);
+        
         if(userTotal === random) {
             youWin();
         }
