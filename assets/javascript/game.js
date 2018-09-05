@@ -63,7 +63,7 @@ $(document).ready(function(){
     $("#safir").on("click", function(){
         userTotal = userTotal + safir;
         console.log("Safir value = " + safir + "   New userTotal = " + userTotal);
-        $("finalTotal").text(userTotal);
+        $("#finalTotal").text(userTotal);
         if(userTotal === random) {
             youWin();
         }
@@ -76,7 +76,7 @@ $(document).ready(function(){
     $("#emerald").on("click", function(){
         userTotal = userTotal + emerald;
         console.log("Emerald value = " + emerald + "   New userTotal = " + userTotal);
-        $("finalTotal").text(userTotal);
+        $("#finalTotal").text(userTotal);
         if(userTotal === random) {
             youWin();
         }
@@ -89,7 +89,7 @@ $(document).ready(function(){
     $("#ametist").on("click", function(){
         userTotal = userTotal + ametist;
         console.log("Ametist value = " + ametist + "   New userTotal = " + userTotal);
-        $("finalTotal").text(userTotal);
+        $("#finalTotal").text(userTotal);
         
         if(userTotal === random) {
             youWin();
@@ -103,7 +103,7 @@ $(document).ready(function(){
     $("#rubin").on("click", function(){
         userTotal = userTotal + rubin;
         console.log("Rubin value = " + rubin + "   New userTotal = " + userTotal);
-        $("finalTotal").text(userTotal);
+        $("#finalTotal").text(userTotal);
         if(userTotal === random) {
             youWin();
         }
