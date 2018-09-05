@@ -9,41 +9,44 @@ $(document).ready(function(){
     var wins = 0;
     var losses = 0;
 
-    var newChest = new Array(); 
     // Random images
+    var newChest = new Array(); 
     newChest[0] = "http://www.efren-cavazos.com/unit-4-game/assets/images/spiked_chest_small.png";
     newChest[1] = "http://www.efren-cavazos.com/unit-4-game/assets/images/common_chest.png";
     newChest[2] = "http://www.efren-cavazos.com/unit-4-game/assets/images/crystal_chest.png";
     newChest[3] = "http://www.efren-cavazos.com/unit-4-game/assets/images/nefrit_chest.png";
     newChest[4] = "http://www.efren-cavazos.com/unit-4-game/assets/images/red_chest.png";
 
-    var j = 0;
-    var p = newChest.length;
-    var preBuffer = new Array();
+    var chest = newChest.length;
+    var x = Math.floor(chest * Math.random())
+    $("#newChest").attr("src", newChest[x]);
+    // var j = 0;
+    // var p = newChest.length;
+    // var preBuffer = new Array();
 
-    for (i = 0; i < p; i++) {
-        preBuffer[i] = new Image();
-        preBuffer[i].src = newChest[i];
-    }
-    var whatImage = Math.floor(Math.random() * (p-1));
+    // for (i = 0; i < p; i++) {
+    //     preBuffer[i] = new Image();
+    //     preBuffer[i].src = newChest[i];
+    // }
+    // var whatImage = Math.floor(Math.random() * (p-1));
 
-    function showImage() {
-        if(whatImage === 0) {
-            document.write('<img src="'+newChest[whatImage]+'" border=0 width=283 </a>');
-        }
-        else if(whatImage === 1) {
-            document.write('<img src="'+newChest[whatImage]+'" border=0 width=283 </a>');
-        }
-        else if(whatImage === 2) {
-            document.write('<img src="'+newChest[whatImage]+'" border=0 width=283 </a>');
-        }
-        else if(whatImage === 3) {
-            document.write('<img src="'+newChest[whatImage]+'" border=0 width=283 </a>');
-        }
-        else if(whatImage === 4) {
-            document.write('<img src="'+newChest[whatImage]+'" border=0 width=283 </a>');
-        }
-    }
+    // function showImage() {
+    //     if(whatImage === 0) {
+    //         document.write('<img src="'+newChest[whatImage]+'">');
+        // }
+        // else if(whatImage === 1) {
+        //     document.write('<img src="'+newChest[whatImage]+'" border=0 width=283 </a>');
+        // }
+        // else if(whatImage === 2) {
+        //     document.write('<img src="'+newChest[whatImage]+'" border=0 width=283 </a>');
+        // }
+        // else if(whatImage === 3) {
+        //     document.write('<img src="'+newChest[whatImage]+'" border=0 width=283 </a>');
+        // }
+        // else if(whatImage === 4) {
+        //     document.write('<img src="'+newChest[whatImage]+'" border=0 width=283 </a>');
+        // }
+    // }
     
 // Declaring valuables
     $("#numberWins").text(wins);

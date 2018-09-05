@@ -43,8 +43,8 @@ h6 {font-size:20px; line-height:26px;}
 /* Chests */
 .spikedChest {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/spiked_chest_small.png");
   background-repeat: no-repeat;
-  height: 400px;
-  width: 400px;
+  height: 283px;
+  width: 250px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -61,8 +61,8 @@ h6 {font-size:20px; line-height:26px;}
 
 .crystalChest {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/crystal_chest.png");
   background-repeat: no-repeat;
-  height: 400px;
-  width: 400px;
+  height: 283px;
+  width: 253px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -70,8 +70,8 @@ h6 {font-size:20px; line-height:26px;}
 
 .nefritChest {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/nefrit_chest.png");
   background-repeat: no-repeat;
-  height: 400px;
-  width: 400px;
+  height: 283px;
+  width: 292px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -79,8 +79,8 @@ h6 {font-size:20px; line-height:26px;}
 
 .redChest {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/red_chest.png");
   background-repeat: no-repeat;
-  height: 400px;
-  width: 400px;
+  height: 283px;
+  width: 240px;
   display: block;
   margin-left: auto;
   margin-right: auto;
