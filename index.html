@@ -17,15 +17,15 @@
   <body class="bg-charcoal-gray">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top padding-20px-top padding-20px-bottom headerBg">
+    <nav class="navbar navbar-expand-lg fixed-top topLayer padding-20px-top padding-20px-bottom headerBg">
       <div class="container">
-        <a class="navbar-brand text-large" href="#">The Jewel Game</a>
+        <a class="navbar-brand text-large logoHorizontal padding-20px-bottom" href="#"></a>
         
       </div>
     </nav>
 
     <!-- Page Content -->
-    <div class="container padding-50px-top text-white">
+    <div class="container text-white">
 
       <!-- Portfolio Item Heading -->
       <!-- <h1 class="my-4">Page Heading
@@ -33,23 +33,23 @@
       </h1> -->
 
       <!-- Portfolio Item Row -->
-      <div class="row padding-100px-top">
-        <div class="col-md-4 text-small opacity5">
-            <h5 class="my-3">Project Description</h5>
-            <p>You will be given a random number at the start of the game.
-                There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
-                You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.
-                Each time the game starts, the game will change the values of each crystal.</p>
+      <div class="row padding-100px-top padding-50px-bottom">
+        <div class="col-md-4 text-small padding-100px-top">
+            <h5 class="my-3">Instructions</h5>
+                <p>By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                <p><strong class="text-hot-pink">You win the game</strong> by matching your total score to the random number.</p>
+                <p><br><strong class="text-hot-pink">You lose the game</strong> if your total score goes above the random number.</p>
+                <p>Each time the game starts, the game will change the values of each crystal.</p>
         </div>  
-        <div class="col-md-3 col-sm-6 mb-4">
-          <h2 class="align-center">Number to Guess:</h2>
+        <div class="col-md-3 col-sm-6 mb-4 padding-100px-top">
+          <h3 class="align-center">Number to Guess:</h3>
             <h1 class="title-exagerated-large align-center padding-20px-top text-hot-pink"><span id="randomNumber"></span></h1>
           </div>  
 
-        <div class="col-md-4 col-sm-6 mb-4 winsAndLosses">
-          <h2>Wins: <span id="numberWins" class="text-hot-pink"></span></h2>
-          <h2>Losses: <span id="numberLosses" class="text-hot-pink"></span></h2>
-          <h2>Total Score: <span id="finalTotal" class="text-hot-pink"></span></h2>
+        <div class="col-md-4 col-sm-6 mb-4 winsAndLosses padding-100px-top">
+          <h3>Wins: <span id="numberWins" class="text-hot-pink"></span></h3>
+          <h3>Losses: <span id="numberLosses" class="text-hot-pink"></span></h3>
+          <h3>Your Score: <span id="finalTotal" class="text-hot-pink"></span></h3>
         </div>
       </div>
       <!-- /.row -->

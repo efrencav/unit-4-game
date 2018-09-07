@@ -40,6 +40,26 @@ h6 {font-size:20px; line-height:26px;}
   z-index: -99;
 }
 
+/* Logo */
+.logo {background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  height: 275px;
+  width: 295px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Logo */
+.logoHorizontal {background-image: url("../images/logo2.png");
+  background-repeat: no-repeat;
+  height: 138px;
+  width: 575px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Chests */
 .spikedChest {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/spiked_chest_small.png");
   background-repeat: no-repeat;
