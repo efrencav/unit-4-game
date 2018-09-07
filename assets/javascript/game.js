@@ -40,6 +40,8 @@ $(document).ready(function(){
         safir = Math.floor(Math.random() * 11 + 1);
         userTotal = 0;
         $("#finalTotal").text(userTotal);
+        var chest = newChest.length;
+        var x = Math.floor(chest * Math.random());
         $("#randomChest").attr("src", newChest[x]);
     }
 // Win Function
