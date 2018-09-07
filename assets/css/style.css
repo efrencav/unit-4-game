@@ -382,3 +382,9 @@ margin-top: 70px;
   line-height: inherit;
   white-space: nowrap;
 }
+
+#randomChest {
+  margin-left: auto;
+  margin-right: auto;
+}
+
