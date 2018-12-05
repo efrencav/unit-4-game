@@ -1,4 +1,4 @@
-# unit-4-game \
+# Unit-4-game 
 UT Austin Coding Bootcamp | Unit 4 jQuery The Jewel Game \
 [https://efrencav.github.io/unit-4-game/](https://efrencav.github.io/unit-4-game/) \
 v1.0 \
