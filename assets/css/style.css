@@ -35,7 +35,7 @@ h6 {font-size:20px; line-height:26px;}
 .bg-dark-brown {background-color:#140c09;}
 
 /* Backgrounds with images */
-.headerBg {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/header-bg.jpg");
+.headerBg {background-image: url("../images/header-bg.jpg");
   background-repeat: repeat-x;
   z-index: -99;
 }
@@ -61,7 +61,7 @@ h6 {font-size:20px; line-height:26px;}
 }
 
 /* Chests */
-.spikedChest {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/spiked_chest_small.png");
+.spikedChest {background-image: url("../images/spiked_chest_small.png");
   background-repeat: no-repeat;
   height: 283px;
   width: 250px;
@@ -71,7 +71,7 @@ h6 {font-size:20px; line-height:26px;}
   z-index: -1;
 }
 
-.commonChest {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/common_chest.png");
+.commonChest {background-image: url("../images/common_chest.png");
   background-repeat: no-repeat;
   height: 400px;
   width: 400px;
@@ -81,7 +81,7 @@ h6 {font-size:20px; line-height:26px;}
   z-index: -1;
 }
 
-.crystalChest {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/crystal_chest.png");
+.crystalChest {background-image: url("../images/crystal_chest.png");
   background-repeat: no-repeat;
   height: 283px;
   width: 253px;
@@ -91,7 +91,7 @@ h6 {font-size:20px; line-height:26px;}
   z-index: -1;
 }
 
-.nefritChest {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/nefrit_chest.png");
+.nefritChest {background-image: url("../images/nefrit_chest.png");
   background-repeat: no-repeat;
   height: 283px;
   width: 292px;
@@ -101,7 +101,7 @@ h6 {font-size:20px; line-height:26px;}
   z-index: -1;
 }
 
-.redChest {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/red_chest.png");
+.redChest {background-image: url("../images/red_chest.png");
   background-repeat: no-repeat;
   height: 283px;
   width: 240px;
@@ -113,7 +113,7 @@ h6 {font-size:20px; line-height:26px;}
 /* images */
 
 /* Jewel Hover */
-#redRuby {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/rubin.png");
+#redRuby {background-image: url("../images/rubin.png");
 background-repeat: no-repeat;
 height: 170px;
 width: 170px;
@@ -122,7 +122,7 @@ margin-right: auto;
 
 }
 
-#redRuby:hover {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/rubin_hover.png");
+#redRuby:hover {background-image: url("../images/rubin_hover.png");
   background-repeat: no-repeat;
   height: 170px;
   width: 170px;
@@ -130,7 +130,7 @@ margin-right: auto;
   margin-right: auto;
 }
 
-#greenJewel {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/emerald.png");
+#greenJewel {background-image: url("../images/emerald.png");
   background-repeat: no-repeat;
   height: 170px;
   width: 170px;
@@ -138,7 +138,7 @@ margin-right: auto;
   margin-right: auto;
 }
 
-#greenJewel:hover {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/emerald_hover.png");
+#greenJewel:hover {background-image: url("../images/emerald_hover.png");
 background-repeat: no-repeat;
 height: 170px;
 width: 170px;
@@ -146,7 +146,7 @@ margin-left: auto;
 margin-right: auto;
 }
 
-#pinkJewel {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/ametist.png");
+#pinkJewel {background-image: url("../images/ametist.png");
 background-repeat: no-repeat;
 height: 170px;
 width: 170px;
@@ -154,7 +154,7 @@ margin-left: auto;
 margin-right: auto;
 }
 
-#pinkJewel:hover {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/ametist_hover.png");
+#pinkJewel:hover {background-image: url("../images/ametist_hover.png");
 background-repeat: no-repeat;
 height: 170px;
 width: 170px;
@@ -162,7 +162,7 @@ margin-left: auto;
 margin-right: auto;
 }
 
-#redJewel {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/rubin.png");
+#redJewel {background-image: url("../images/rubin.png");
 background-repeat: no-repeat;
 height: 170px;
 width: 170px;
@@ -170,7 +170,7 @@ margin-left: auto;
 margin-right: auto;
 }
 
-#redJewel:hover {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/rubin_hover.png");
+#redJewel:hover {background-image: url("../images/rubin_hover.png");
 background-repeat: no-repeat;
 height: 170px;
 width: 170px;
@@ -179,7 +179,7 @@ margin-right: auto;
 }
 
 
-#blueTriangle {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/safir.png");
+#blueTriangle {background-image: url("../images/safir.png");
   background-repeat: no-repeat;
   height: 170px;
   width: 170px;
@@ -187,7 +187,7 @@ margin-right: auto;
   margin-right: auto;
   }
   
-#blueTriangle:hover {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/safir_hover.png");
+#blueTriangle:hover {background-image: url("../images/safir_hover.png");
   background-repeat: no-repeat;
   height: 170px;
   width: 170px;
@@ -195,7 +195,7 @@ margin-right: auto;
   margin-right: auto;
 }
 
-#bgRepeat {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/bg-repeat.png");
+#bgRepeat {background-image: url("../images/bg-repeat.png");
 background-repeat: repeat-x;
 height: 200px;
 width: 1000px;
@@ -205,7 +205,7 @@ margin-right: auto;
 margin-top: 70px;
 }
 
-#title {background-image: url("http://www.efren-cavazos.com/unit-4-game/assets/images/title.png");
+#title {background-image: url("../images/title.png");
   background-repeat: no-repeat;
   height:144px;
   width: auto 0;
