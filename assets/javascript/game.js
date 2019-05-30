@@ -19,11 +19,11 @@ $(document).ready(function(){
     $("#numberLosses").text(losses);
 
 // Random Chest images as an accessory
-    var newChest = ["http://www.efren-cavazos.com/unit-4-game/assets/images/spiked_chest_small.png",
-                    "http://www.efren-cavazos.com/unit-4-game/assets/images/common_chest.png",
-                    "http://www.efren-cavazos.com/unit-4-game/assets/images/crystal_chest.png", 
-                    "http://www.efren-cavazos.com/unit-4-game/assets/images/nefrit_chest.png",
-                    "http://www.efren-cavazos.com/unit-4-game/assets/images/red_chest.png"];
+    var newChest = ["https://efrencav.github.io/unit-4-game/assets/images/spiked_chest_small.png",
+                    "https://efrencav.github.io/unit-4-game/assets/images/common_chest.png",
+                    "https://efrencav.github.io/unit-4-game/assets/images/crystal_chest.png", 
+                    "https://efrencav.github.io/unit-4-game/assets/images/nefrit_chest.png",
+                    "https://efrencav.github.io/unit-4-game/assets/images/red_chest.png"];
 
     var chest = newChest.length;
     var x = Math.floor(chest * Math.random());
