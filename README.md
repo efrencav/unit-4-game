@@ -1,6 +1,6 @@
 # Unit-4-game 
-UT Austin Coding Bootcamp | Unit 4 jQuery The Jewel Game \
-[https://efrencav.github.io/unit-4-game/](https://efrencav.github.io/unit-4-game/) \
+UT Austin Coding Bootcamp | jQuery The Jewel Game \
+[https://efrencav.github.io/unit-4-game/](https://efrencav.github.io/the-jewel-game/) \
 v1.0 \
 Orig. Deployment - September 15, 2018
 
